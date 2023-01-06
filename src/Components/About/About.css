@@ -1,0 +1,246 @@
+.section2{
+    min-height: 75vh;
+    background-color: var(--light-blue);
+    position: relative;
+    overflow: hidden;
+}
+.about{
+    justify-content:space-between;
+    align-items: center;
+    min-height: inherit;
+    gap: 6rem;
+
+}
+.rectangle{
+    position: absolute;
+    width: 9%;
+    height: 82%;
+    left: -1%;
+    top: 9%;
+}
+
+.a-left{
+    width: 50%;
+    justify-content: space-evenly;
+    height: 30rem;
+}
+.a-left :nth-child(1){
+    font-size:1.5rem;
+    color: var(--yellow-clr);
+    text-transform: uppercase;
+}
+.a-left :nth-child(2){
+  font-size: 2.875rem;
+  color: var(--white-clr);
+}
+.a-left :nth-child(3){
+ color: var(--white-clr);
+    line-height: 1.8em;
+    font-size: 1rem;
+}
+.a-left :nth-child(4){
+    margin-top: 2rem;
+}
+
+
+/* right-side */
+.a-right{
+position: relative;
+width: 50%;
+height: 30rem;
+justify-content: space-evenly;
+}
+.skill-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.skill-box .title{
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color:var(--white-clr);
+}
+
+.skill-box .skill-bar{
+    height: 10px;
+    width: 70%;
+    margin-top: 6px;
+    background: rgba(174, 174, 174, 1);
+}
+
+.skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    background: var(--yellow-clr);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.css {
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.javascript{
+    width: 60%;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -50px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    padding: 0.8rem;
+    bottom: -41px;
+    border-radius: 100%;
+    height: 21px;
+    width: 21px;
+    z-index: -1;
+    background-color: var(--yellow-clr);
+    opacity: 0.7;
+    transform: translateX(-50%) rotate(45deg);
+}
+.tooltip::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -37px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    z-index: -1;
+    background-color: var(--white-clr);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .about{
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+    }
+    .rectangle{
+        display: none;
+    }
+    .a-left{
+        width: 100%;
+        justify-content: space-evenly;
+        height: 25rem;
+       align-items: center;
+        text-align: center;
+    }
+    .a-left :nth-child(1){
+        font-size:0.9rem;
+    }
+    .a-left :nth-child(2){
+        font-size: 1.125rem;
+      }
+      .a-left :nth-child(3) {
+        color: var(--white-clr);
+        line-height: 1.6em;
+        font-size: 0.67rem;
+    }
+    /* right-side */
+.a-right{
+    width: 100%;
+    height: 19rem;
+    }
+    .skill-box .title {
+        font-size: 0.8rem;
+    }
+    .skill-box .skill-bar {
+        height: 5px;
+        width: 100%;
+    }
+    .skill-per .tooltip {
+        top: -44px;
+        font-size: 0.8rem;
+    }
+    .tooltip::before{
+        bottom: -38px;
+    }
+    .tooltip::after{
+        bottom: -33px;
+    }
+}
+
+
+/* media query for Tablets */
+@media (min-width:481px) and (max-width:768px){
+    .about{
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+    }
+    .rectangle{
+        display: none;
+    }
+    .a-left{
+        width: 80%;
+        justify-content: space-evenly;
+        height: 25rem;
+       align-items: center;
+        text-align: center;
+    }
+    .a-left :nth-child(1){
+        font-size:1.2rem;
+    }
+    .a-left :nth-child(2){
+        font-size: 1.3rem;
+      }
+      .a-left :nth-child(3) {
+        color: var(--white-clr);
+        line-height: 1.6em;
+        font-size: 0.8rem;
+    }
+    /* right-side */
+.a-right{
+    width: 100%;
+    height: 19rem;
+    }
+    .skill-box .title {
+        font-size: 0.8rem;
+    }
+    .skill-box .skill-bar {
+        height: 5px;
+        width: 100%;
+    }
+    .skill-per .tooltip {
+        top: -44px;
+        font-size: 0.8rem;
+    }
+    .tooltip::before{
+        bottom: -38px;
+    }
+    .tooltip::after{
+        bottom: -33px;
+    }
+}

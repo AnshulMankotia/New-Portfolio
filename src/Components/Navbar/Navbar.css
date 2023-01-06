@@ -15,7 +15,7 @@ header{
     color: var(--white-clr);
 }
 ul {
-    gap: 3rem;
+    gap: 2rem;
 }
 a{
     color: var(--white-clr);
@@ -55,7 +55,10 @@ position: relative;
 
 /* media query for mobile */
 @media (min-width:320px) and (max-width:480px){
-
+header{
+    position: relative;
+    z-index: 999;
+}
 ul{
   flex-direction: column;
   position: fixed;
@@ -67,7 +70,8 @@ ul{
   align-items: center;
   min-height: 100vh; 
   transition: 1s;
-  transform: translateY(-100vh);
+  transform: translateY(-102vh);
+
 }
 ul.responsive_nav{
     transform: none;
@@ -113,6 +117,10 @@ h1{
 
 /* media query for Tablets */
 @media (min-width:481px) and (max-width:768px){
+    header{
+        position: relative;
+        z-index: 999;
+    }
     ul{
         flex-direction: column;
         position: fixed;
