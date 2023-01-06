@@ -1,0 +1,33 @@
+.section1{
+    min-height:100vh ;
+    position: relative;
+}
+.sidenav{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    gap: 4rem;
+    left: -12%;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-2);
+}
+.sidenav span:nth-child(4){
+    margin-right: 2rem;
+}
+ hr{
+    transform: rotate(90deg);
+    height: 7rem;
+    width: 2px;
+    background-color: var(--light-grey-clr);
+    border: none;
+}
+.i-left{
+     width: 38.8125rem;
+     height: 14.3125rem;
+}
+.i-left h1{
+    font-size: 3.75rem;
+    font-family: var(--font-family-1);
+    font-weight: bold;
+}
