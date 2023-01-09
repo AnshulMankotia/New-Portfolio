@@ -1,0 +1,127 @@
+footer {
+  min-height: 90vh;
+  background-color: var(--light-blue);
+}
+.contact {
+  min-height: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-us {
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.contact-us p{
+    color: white;
+}
+.form {
+  justify-content: space-between;
+  width: 100%;
+}
+.address{
+    gap: 2rem;
+}
+.icon {
+  align-items: center;
+  gap: 2rem;
+}
+.icon span{
+    color: white;
+}
+.icon img {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--yellow-clr);
+    padding: 1rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.input{
+    gap: 2rem;
+    width: 40%;
+}
+
+.input input:nth-of-type(n){
+    outline: none;
+    border: none;
+    height: 3rem;
+    padding: 0rem 4rem;
+    background-color: var(--dark-blue-clr);
+}
+.input input:nth-of-type(n):focus{
+border: 1px solid var(--yellow-clr);
+}
+.input :nth-child(3){
+    height: 7rem;
+    background-color: var(--dark-blue-clr);
+    padding: 1rem 4rem;
+    outline: none;
+    border: none;
+}
+.input :nth-child(3):focus{
+    border: 1px solid var(--yellow-clr);
+}
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    background-color: var(--yellow-clr);
+    width: 100%;
+    padding: 0rem 19rem 0rem 19rem;
+}
+.policy span:nth-of-type(1){
+border-right: 2px solid black;
+padding-right: 1rem;
+}
+.policy span:nth-of-type(2){
+    padding-left: 1rem;
+}
+
+
+/* media query for mobile */
+@media (min-width:320px) and (max-width:480px){
+    .contact {
+        gap: 2rem;
+    }
+    .contact-us p {
+        font-size: 0.8rem;
+    }
+   .form{
+    flex-direction: column;
+    gap: 2rem;
+   }
+
+   .input input:nth-of-type(n){
+    padding: 0rem 1rem;
+}
+.input {
+    width: 100%;
+}
+.icon span {
+    font-size: 0.8rem;
+}
+.terms {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+.terms span:nth-of-type(n){
+    font-size: 0.7rem;
+}
+.policy span:nth-of-type(1) {
+    padding-right: 0.2rem;
+}
+.policy span:nth-of-type(2) {
+    padding-left: 0.2rem;
+}
+}
+
+
+/* media query for Tablets */
+@media (min-width:481px) and (max-width:768px){
+    .container{
+        padding: 2rem 2.5rem 0rem 2.5rem;
+    }
+}
+

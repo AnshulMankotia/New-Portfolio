@@ -1,0 +1,114 @@
+.section3{
+    min-height:75vh;
+    background-color: var(--dark-blue-clr);
+    position: relative;
+    overflow: hidden;
+}
+.section3 .rectangle{
+    position: absolute;
+     position: absolute;
+    left: 92%;
+}
+
+.service{
+    min-height: 75vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-service{
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.my-service p{
+    color: var(--white-clr);
+}
+
+.cards {
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.card{
+    flex: 1;
+    color: var(--white-clr);
+    height: 23rem;
+    padding: 0rem 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--dark-blue-clr);
+    box-shadow:20px 12px 31px 3px black;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+.card:hover{
+        border-bottom: 3px solid yellow;
+}
+.card :nth-child(2){
+    font-size: 1.375rem;
+    text-transform: uppercase;
+}
+.card :nth-child(3){
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+.card img{
+    width: 13%;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 0.7rem;
+}
+
+/* media query for mobile */
+@media (min-width:320px) and (max-width:480px){
+    h2 {
+        font-size: 1.5rem;
+    }
+    .service {
+        gap: 2rem;
+    }
+    .my-service {
+        padding: 0rem 0rem;
+    }
+    .my-service p {
+        font-size: 0.9rem;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        height: 18rem;
+        width: 100%;
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+
+}
+
+
+/* media query for Tablets */
+@media (min-width:481px) and (max-width:768px){
+    h2 {
+        font-size: 1.9rem;
+    }
+    .service {
+        gap: 2rem;
+    }
+    .my-service {
+        padding: 0rem 0rem;
+    }
+    .my-service p {
+        font-size: 1rem;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        height: 18rem;
+        width: 100%;
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+}

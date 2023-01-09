@@ -1,0 +1,120 @@
+.section6{
+    min-height: 90vh;
+    background-color: var(--dark-blue-clr);
+    position: relative;
+}
+.section6 .rectangle{
+        position: absolute;
+        left: 92%;
+}
+.pricing{
+    min-height: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+.pricing-plan{
+    text-align: center;
+    gap: 2rem;
+}
+.pricing-plan :nth-child(2){
+    color: var(--white-clr);
+}
+.p-cards {
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.p-card{
+    flex: 1;
+    color: var(--white-clr);
+    height: 30rem;
+    padding: 0rem 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--dark-blue-clr);
+    box-shadow:20px 12px 31px 3px black;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+.p-card :nth-child(1){
+    font-size: 1.875rem;
+    color: var(--white-clr);
+}
+.p-card :nth-child(2){
+    font-size: 3.75rem;
+    color: var(--yellow-clr);
+}
+.p-card span:nth-of-type(n+3){
+font-size: 1.125rem;
+}
+.p-card hr{
+    opacity: 0.5;
+    width: 100%;
+    background-color: yellow;
+    border: none;
+    height: 2px;
+}
+.p-card:hover{
+        border-bottom: 3px solid yellow;
+}
+
+
+/* media query for mobile */
+@media (min-width:320px) and (max-width:480px){
+    .pricing{
+        gap: 2rem;
+    }
+    .p-cards {
+        width: 100%;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .p-card{
+        padding: 2rem 2rem;
+        gap: 1rem;
+    }
+    .p-card :nth-child(2) {
+        font-size: 2rem;
+    }
+    .p-card span:nth-of-type(n+3) {
+        font-size: 0.9rem;
+    }
+    .p-card :nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .pricing-plan :nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* media query for Tablets */
+@media (min-width:481px) and (max-width:768px){
+    .pricing{
+        gap: 2rem;
+    }
+    .p-cards {
+        width: 100%;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .p-card{
+        padding: 2rem 2rem;
+        gap: 1rem;
+    }
+    .p-card :nth-child(2) {
+        font-size: 2rem;
+    }
+    .p-card span:nth-of-type(n+3) {
+        font-size: 0.9rem;
+    }
+    .p-card :nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .pricing-plan :nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
